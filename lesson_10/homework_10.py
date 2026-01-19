@@ -74,4 +74,7 @@ class Circle(Shape):
         self.__radius = radius
 
     def squre(self):
-        return pi * (self.__radius)**2
+        return pi*(self.__radius)**2
+
+    def perimetr(self):
+        return 4*pi*self.__radius
