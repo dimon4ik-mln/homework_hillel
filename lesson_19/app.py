@@ -20,18 +20,30 @@ def upload_image():
         return jsonify({"error": "No image provided"}), 400
 
     image = request.files["image"]
-
     filename = image.filename
-
     filepath = os.path.join(UPLOAD_FOLDER, filename)
 
     image.save(filepath)
 
-    image_url = f"http://127.0.0.1:8080/uploads/{filename}"
+    image_url = f"{request.host_url}uploads/{filename}"
 
     return jsonify({
         "image_url": image_url
     }), 201
+
+
+# ---------------------------
+# GET /uploads/<filename>
+# ---------------------------
+@app.route("/uploads/<filename>", methods=["GET"])
+def serve_upload(filename):
+
+    filepath = os.path.join(UPLOAD_FOLDER, filename)
+
+    if not os.path.exists(filepath):
+        return jsonify({"error": "File not found"}), 404
+
+    return send_file(filepath)
 
 
 # ---------------------------
@@ -47,14 +59,12 @@ def get_image(filename):
 
     # Якщо Content-Type = text → повертаємо JSON
     if request.headers.get("Content-Type") == "text":
-
-        image_url = f"http://127.0.0.1:8080/uploads/{filename}"
+        image_url = f"{request.host_url}uploads/{filename}"
 
         return jsonify({
             "image_url": image_url
         })
 
-    # Інакше повертаємо саме зображення
     return send_file(filepath)
 
 
@@ -71,7 +81,7 @@ def delete_image(filename):
 
     os.remove(filepath)
 
-    image_url = f"http://127.0.0.1:8080/uploads/{filename}"
+    image_url = f"{request.host_url}uploads/{filename}"
 
     return jsonify({
         "image_url": image_url
@@ -82,4 +92,4 @@ def delete_image(filename):
 # Запуск сервера
 # ---------------------------
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=8080)
+    app.run(host="0.0.0.0", port=8080)
