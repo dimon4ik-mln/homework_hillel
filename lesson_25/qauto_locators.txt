@@ -1,0 +1,183 @@
+QAuto locators for https://qauto2.forstudy.space/
+Auth for Selenium:
+https://guest:welcome2qauto@qauto2.forstudy.space/
+
+NOTE:
+- XPath supports text() and complex expressions.
+- CSS selectors DO NOT support text(), so the "text()" requirement applies only to XPath.
+- A few locators below are based on the public page-object structure for the related QAuto training site and common DOM patterns of this project. Before сдача, quickly verify them in DevTools on your side.
+
+========================
+25 XPATH LOCATORS
+========================
+1. Home menu link
+//a[text()="Home"]
+
+2. About button/link by text
+//*[self::a or self::button][text()="About"]
+
+3. Contacts button/link by text
+//*[self::a or self::button][text()="Contacts"]
+
+4. Sign In button by exact text
+//button[text()="Sign In"]
+
+5. Sign Up button by exact text
+//button[text()="Sign Up"]
+
+6. Guest login button by exact text
+//button[text()="Guest log in"]
+
+7. Main hero title by partial text
+//h1[contains(text(),"Do more")]
+
+8. Contacts section header
+//h2[text()="Contacts"]
+
+9. Footer link to Facebook by href attribute
+//a[contains(@href,"facebook")]
+
+10. Footer link to Telegram by href attribute
+//a[contains(@href,"telegram")]
+
+11. Sign in email input by name attribute
+//input[@name="email"]
+
+12. Sign in password input by id
+//*[@id="signinPassword"]
+
+13. Sign in modal title
+//div[contains(@class,"modal-content")]//h4[text()="Log in"]
+
+14. Login submit button inside sign in modal
+//div[contains(@class,"modal-content")]//button[text()="Login"]
+
+15. Registration name input by id
+//*[@id="signupName"]
+
+16. Registration last name input by id
+//*[@id="signupLastName"]
+
+17. Registration email input by id
+//*[@id="signupEmail"]
+
+18. Registration password input by id
+//*[@id="signupPassword"]
+
+19. Registration repeat password input by id
+//*[@id="signupRepeatPassword"]
+
+20. Register submit button inside modal
+//div[contains(@class,"modal-content")]//button[text()="Register"]
+
+21. Garage nav link by text
+//a[text()="Garage"]
+
+22. Fuel expenses nav link by text
+//a[text()="Fuel expenses"]
+
+23. Add car button on Garage page by class and text
+//button[contains(@class,"btn-primary") and text()="Add car"]
+
+24. Brand select in Add car modal by id
+//*[@id="addCarBrand"]
+
+25. Complex locator: Add button inside Add car modal footer
+//div[contains(@class,"modal-content")]//div[contains(@class,"modal-footer")]//button[text()="Add"]
+
+========================
+25 CSS LOCATORS
+========================
+1. Home link
+nav a[href="/"]
+
+2. About link/button
+button.hero-descriptor_btn
+
+3. Contacts link in header
+header nav a[href="#contactsSection"]
+
+4. Sign In button in header
+button.header_signin
+
+5. Sign Up button in header
+button.hero-descriptor_btn.btn.btn-primary
+
+6. Guest login button
+button.btn.btn-outline-white
+
+7. Hero title
+div.hero-descriptor h1
+
+8. Contacts section
+section#contactsSection
+
+9. Contacts title
+section#contactsSection h2
+
+10. Facebook icon link
+footer a[href*="facebook"]
+
+11. Telegram icon link
+footer a[href*="telegram"]
+
+12. YouTube icon link
+footer a[href*="youtube"]
+
+13. Instagram icon link
+footer a[href*="instagram"]
+
+14. Sign in modal dialog
+div.modal-content
+
+15. Sign in email field
+input[name="email"]
+
+16. Sign in password field
+#signinPassword
+
+17. Login button in modal footer
+div.modal-content div.modal-footer button.btn.btn-primary
+
+18. Registration name field
+#signupName
+
+19. Registration last name field
+#signupLastName
+
+20. Registration email field
+#signupEmail
+
+21. Registration password field
+#signupPassword
+
+22. Registration repeat password field
+#signupRepeatPassword
+
+23. Garage page Add car button
+button.btn.btn-primary
+
+24. Brand select in Add car modal
+select#addCarBrand
+
+25. Complex locator: Add car mileage input inside modal body
+div.modal-content div.modal-body input#addCarMileage
+
+========================
+Optional Python structure for repo file
+========================
+XPATH_LOCATORS = {
+    "home_link": '//a[text()="Home"]',
+    "sign_in_button": '//button[text()="Sign In"]',
+    "guest_login_button": '//button[text()="Guest log in"]',
+    "signin_email": '//input[@name="email"]',
+    "signin_password": '//*[@id="signinPassword"]',
+}
+
+CSS_LOCATORS = {
+    "home_link": 'nav a[href="/"]',
+    "sign_in_button": 'button.header_signin',
+    "guest_login_button": 'button.btn.btn-outline-white',
+    "signin_email": 'input[name="email"]',
+    "signin_password": '#signinPassword',
+}

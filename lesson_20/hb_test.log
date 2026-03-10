@@ -1,0 +1,5 @@
+ERROR Heartbeat 35s at 04:51:17 (prev line 1189) -> 04:50:42 (line 1200)
+ERROR Heartbeat 35s at 03:39:11 (prev line 2762) -> 03:38:36 (line 2773)
+ERROR Heartbeat 36s at 02:27:06 (prev line 4335) -> 02:26:30 (line 4346)
+WARNING Heartbeat 32s at 01:35:10 (prev line 5468) -> 01:34:38 (line 5479)
+ERROR Heartbeat 35s at 01:14:58 (prev line 5908) -> 01:14:23 (line 5919)
