@@ -18,8 +18,8 @@ class Rhombus:
 
         object.__setattr__(self, name, value)
 
-rhombus = Rhombus(20, 80)
-
-print("Сторона a:", rhombus.side_a)
-print("Кут A:", rhombus.angle_a)
-print("Кут B:", rhombus.angle_b)
+if __name__ == "__main__":
+    rhombus = Rhombus(20, 80)
+    print("Сторона a:", rhombus.side_a)
+    print("Кут A:", rhombus.angle_a)
+    print("Кут B:", rhombus.angle_b)
