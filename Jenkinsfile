@@ -27,7 +27,7 @@ pipeline {
             steps {
                 dir('lesson_31') {
                     bat 'start /B venv\\Scripts\\python cars_app.py'
-                    bat 'timeout /t 5 /nobreak'
+                    bat 'ping 127.0.0.1 -n 6 > nul'
                 }
             }
         }
