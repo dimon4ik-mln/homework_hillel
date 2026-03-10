@@ -3,6 +3,7 @@ import pytest
 import logging
 import os
 import sys
+import allure
 
 BASE_URL = os.getenv("BASE_URL", "http://127.0.0.1:5000")
 
