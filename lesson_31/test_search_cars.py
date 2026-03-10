@@ -1,13 +1,6 @@
-import logging
-import sys
+import os
 
-import pytest
-import requests
-import allure
-from requests.auth import HTTPBasicAuth
-
-
-BASE_URL = "http://127.0.0.1:8080"
+BASE_URL = os.getenv("BASE_URL", "http://127.0.0.1:5000")
 
 
 def setup_logger():
