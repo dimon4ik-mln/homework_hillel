@@ -96,7 +96,7 @@ total_big_pizza = cost_big_pizza * quantity_big_pizza
 total_medium_pizza = cost_medium_pizza * quantity_medium_pizza
 total_juice = cost_juice * quantity_juice
 total_cake = cost_cake * quantity_cake
-total_water = cost_water * cost_water
+total_water = cost_water * quantity_water
 
 all_total = total_big_pizza + total_medium_pizza + total_juice + total_cake + total_water
 print(all_total)
