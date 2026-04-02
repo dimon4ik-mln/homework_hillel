@@ -1,0 +1,100 @@
+2026-03-06 10:34:59,464 | INFO | Починаємо аутентифікацію користувача...
+2026-03-06 10:34:59,468 | INFO | Auth status code: 200
+2026-03-06 10:34:59,469 | INFO | Auth response: {
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Mjc4NjA5OSwianRpIjoiNzYxNjVlZDgtOTJjMi00ZDIwLWJhNjEtMGMxMGYwNTViZTcyIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3RfdXNlciIsIm5iZiI6MTc3Mjc4NjA5OSwiY3NyZiI6ImQxMmRhNjA2LWYwM2QtNDZlOS05ZmFlLTZiZDM5MGI5MGRkZiIsImV4cCI6MTc3Mjc4Njk5OX0.JVnrFQ9_9ZGBTBd_DylnEue3YyWK39V6lELbMQc7jVc"
+}
+
+2026-03-06 10:34:59,469 | INFO | Аутентифікація успішна. Токен додано в Session headers.
+2026-03-06 10:34:59,470 | INFO | Запускаємо тест з параметрами: sort_by=price, limit=3
+2026-03-06 10:34:59,475 | INFO | GET /cars status code: 200
+2026-03-06 10:34:59,475 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=price&limit=3
+2026-03-06 10:34:59,475 | INFO | Кількість отриманих записів: 3
+2026-03-06 10:34:59,475 | INFO | Отримані дані: [{'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}]
+2026-03-06 10:34:59,476 | INFO | Тест пройдено успішно для параметрів: sort_by=price, limit=3
+2026-03-06 10:34:59,478 | INFO | Запускаємо тест з параметрами: sort_by=price, limit=10
+2026-03-06 10:34:59,482 | INFO | GET /cars status code: 200
+2026-03-06 10:34:59,482 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=price&limit=10
+2026-03-06 10:34:59,482 | INFO | Кількість отриманих записів: 10
+2026-03-06 10:34:59,483 | INFO | Отримані дані: [{'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Volkswagen', 'engine_volume': 2.0, 'price': 33000, 'year': 2019}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'Nissan', 'engine_volume': 1.5, 'price': 40000, 'year': 2021}, {'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}]
+2026-03-06 10:34:59,483 | INFO | Тест пройдено успішно для параметрів: sort_by=price, limit=10
+2026-03-06 10:34:59,485 | INFO | Запускаємо тест з параметрами: sort_by=year, limit=5
+2026-03-06 10:34:59,488 | INFO | GET /cars status code: 200
+2026-03-06 10:34:59,488 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=year&limit=5
+2026-03-06 10:34:59,488 | INFO | Кількість отриманих записів: 5
+2026-03-06 10:34:59,489 | INFO | Отримані дані: [{'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}]
+2026-03-06 10:34:59,489 | INFO | Тест пройдено успішно для параметрів: sort_by=year, limit=5
+2026-03-06 10:34:59,491 | INFO | Запускаємо тест з параметрами: sort_by=year, limit=8
+2026-03-06 10:34:59,494 | INFO | GET /cars status code: 200
+2026-03-06 10:34:59,494 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=year&limit=8
+2026-03-06 10:34:59,494 | INFO | Кількість отриманих записів: 8
+2026-03-06 10:34:59,495 | INFO | Отримані дані: [{'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}, {'brand': 'Volkswagen', 'engine_volume': 2.0, 'price': 33000, 'year': 2019}, {'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}]
+2026-03-06 10:34:59,495 | INFO | Тест пройдено успішно для параметрів: sort_by=year, limit=8
+2026-03-06 10:34:59,497 | INFO | Запускаємо тест з параметрами: sort_by=engine_volume, limit=4
+2026-03-06 10:34:59,501 | INFO | GET /cars status code: 200
+2026-03-06 10:34:59,501 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=engine_volume&limit=4
+2026-03-06 10:34:59,501 | INFO | Кількість отриманих записів: 4
+2026-03-06 10:34:59,502 | INFO | Отримані дані: [{'brand': 'Nissan', 'engine_volume': 1.5, 'price': 40000, 'year': 2021}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}]
+2026-03-06 10:34:59,502 | INFO | Тест пройдено успішно для параметрів: sort_by=engine_volume, limit=4
+2026-03-06 10:34:59,503 | INFO | Запускаємо тест з параметрами: sort_by=brand, limit=7
+2026-03-06 10:34:59,507 | INFO | GET /cars status code: 200
+2026-03-06 10:34:59,507 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=brand&limit=7
+2026-03-06 10:34:59,507 | INFO | Кількість отриманих записів: 7
+2026-03-06 10:34:59,507 | INFO | Отримані дані: [{'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}]
+2026-03-06 10:34:59,507 | INFO | Тест пройдено успішно для параметрів: sort_by=brand, limit=7
+2026-03-06 10:34:59,509 | INFO | Запускаємо тест з параметрами: sort_by=brand, limit=12
+2026-03-06 10:34:59,513 | INFO | GET /cars status code: 200
+2026-03-06 10:34:59,513 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=brand&limit=12
+2026-03-06 10:34:59,513 | INFO | Кількість отриманих записів: 10
+2026-03-06 10:34:59,513 | INFO | Отримані дані: [{'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}, {'brand': 'Nissan', 'engine_volume': 1.5, 'price': 40000, 'year': 2021}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'Volkswagen', 'engine_volume': 2.0, 'price': 33000, 'year': 2019}]
+2026-03-06 10:34:59,514 | INFO | Тест пройдено успішно для параметрів: sort_by=brand, limit=12
+2026-03-06 10:34:59,515 | INFO | Закриваємо сесію...
+2026-03-06 10:35:34,511 | INFO | Починаємо аутентифікацію користувача...
+2026-03-06 10:35:34,514 | INFO | Auth status code: 200
+2026-03-06 10:35:34,515 | INFO | Auth response: {
+  "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3Mjc4NjEzNCwianRpIjoiZjU4ZjM1MjUtYTQwOC00MmE3LWE5MWQtMDNjNjZmMjRkMWQwIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6InRlc3RfdXNlciIsIm5iZiI6MTc3Mjc4NjEzNCwiY3NyZiI6ImUyYWNjOTgwLTU3Y2ItNDZiNS04ZTFhLTAzYjhlZDNiOTI4MCIsImV4cCI6MTc3Mjc4NzAzNH0.lRcF0mwiVSbI7zJFoEYfcpheS_sv45_CIgWgqGTuAUA"
+}
+
+2026-03-06 10:35:34,515 | INFO | Аутентифікація успішна. Токен додано в Session headers.
+2026-03-06 10:35:34,515 | INFO | Запускаємо тест з параметрами: sort_by=price, limit=3
+2026-03-06 10:35:34,519 | INFO | GET /cars status code: 200
+2026-03-06 10:35:34,519 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=price&limit=3
+2026-03-06 10:35:34,520 | INFO | Кількість отриманих записів: 3
+2026-03-06 10:35:34,520 | INFO | Отримані дані: [{'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}]
+2026-03-06 10:35:34,520 | INFO | Тест пройдено успішно для параметрів: sort_by=price, limit=3
+2026-03-06 10:35:34,521 | INFO | Запускаємо тест з параметрами: sort_by=price, limit=10
+2026-03-06 10:35:34,525 | INFO | GET /cars status code: 200
+2026-03-06 10:35:34,525 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=price&limit=10
+2026-03-06 10:35:34,525 | INFO | Кількість отриманих записів: 10
+2026-03-06 10:35:34,525 | INFO | Отримані дані: [{'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Volkswagen', 'engine_volume': 2.0, 'price': 33000, 'year': 2019}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'Nissan', 'engine_volume': 1.5, 'price': 40000, 'year': 2021}, {'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}]
+2026-03-06 10:35:34,525 | INFO | Тест пройдено успішно для параметрів: sort_by=price, limit=10
+2026-03-06 10:35:34,528 | INFO | Запускаємо тест з параметрами: sort_by=year, limit=5
+2026-03-06 10:35:34,530 | INFO | GET /cars status code: 200
+2026-03-06 10:35:34,530 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=year&limit=5
+2026-03-06 10:35:34,530 | INFO | Кількість отриманих записів: 5
+2026-03-06 10:35:34,530 | INFO | Отримані дані: [{'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}]
+2026-03-06 10:35:34,530 | INFO | Тест пройдено успішно для параметрів: sort_by=year, limit=5
+2026-03-06 10:35:34,532 | INFO | Запускаємо тест з параметрами: sort_by=year, limit=8
+2026-03-06 10:35:34,534 | INFO | GET /cars status code: 200
+2026-03-06 10:35:34,535 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=year&limit=8
+2026-03-06 10:35:34,535 | INFO | Кількість отриманих записів: 8
+2026-03-06 10:35:34,535 | INFO | Отримані дані: [{'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}, {'brand': 'Volkswagen', 'engine_volume': 2.0, 'price': 33000, 'year': 2019}, {'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}]
+2026-03-06 10:35:34,535 | INFO | Тест пройдено успішно для параметрів: sort_by=year, limit=8
+2026-03-06 10:35:34,537 | INFO | Запускаємо тест з параметрами: sort_by=engine_volume, limit=4
+2026-03-06 10:35:34,540 | INFO | GET /cars status code: 200
+2026-03-06 10:35:34,540 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=engine_volume&limit=4
+2026-03-06 10:35:34,540 | INFO | Кількість отриманих записів: 4
+2026-03-06 10:35:34,540 | INFO | Отримані дані: [{'brand': 'Nissan', 'engine_volume': 1.5, 'price': 40000, 'year': 2021}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}]
+2026-03-06 10:35:34,540 | INFO | Тест пройдено успішно для параметрів: sort_by=engine_volume, limit=4
+2026-03-06 10:35:34,542 | INFO | Запускаємо тест з параметрами: sort_by=brand, limit=7
+2026-03-06 10:35:34,546 | INFO | GET /cars status code: 200
+2026-03-06 10:35:34,546 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=brand&limit=7
+2026-03-06 10:35:34,546 | INFO | Кількість отриманих записів: 7
+2026-03-06 10:35:34,546 | INFO | Отримані дані: [{'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}]
+2026-03-06 10:35:34,546 | INFO | Тест пройдено успішно для параметрів: sort_by=brand, limit=7
+2026-03-06 10:35:34,548 | INFO | Запускаємо тест з параметрами: sort_by=brand, limit=12
+2026-03-06 10:35:34,551 | INFO | GET /cars status code: 200
+2026-03-06 10:35:34,551 | INFO | GET /cars url: http://127.0.0.1:8080/cars?sort_by=brand&limit=12
+2026-03-06 10:35:34,551 | INFO | Кількість отриманих записів: 10
+2026-03-06 10:35:34,551 | INFO | Отримані дані: [{'brand': 'Audi', 'engine_volume': 1.8, 'price': 45000, 'year': 2020}, {'brand': 'BMW', 'engine_volume': 2.0, 'price': 50000, 'year': 2018}, {'brand': 'Chevrolet', 'engine_volume': 1.8, 'price': 28000, 'year': 2018}, {'brand': 'Ford', 'engine_volume': 2.2, 'price': 32000, 'year': 2015}, {'brand': 'Honda', 'engine_volume': 1.6, 'price': 30000, 'year': 2016}, {'brand': 'Hyundai', 'engine_volume': 1.6, 'price': 29000, 'year': 2020}, {'brand': 'Mercedes', 'engine_volume': 2.5, 'price': 55000, 'year': 2019}, {'brand': 'Nissan', 'engine_volume': 1.5, 'price': 40000, 'year': 2021}, {'brand': 'Toyota', 'engine_volume': 2.4, 'price': 35000, 'year': 2017}, {'brand': 'Volkswagen', 'engine_volume': 2.0, 'price': 33000, 'year': 2019}]
+2026-03-06 10:35:34,551 | INFO | Тест пройдено успішно для параметрів: sort_by=brand, limit=12
+2026-03-06 10:35:34,552 | INFO | Закриваємо сесію...
